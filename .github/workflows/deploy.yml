@@ -27,5 +27,5 @@ jobs:
             rsync -az --delete \
               --exclude ".git" \ 
               --exclude ".github" \
-              "$GITHUB_WORKSPACE/" \
+              ./ \
               ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/khoale.site/
