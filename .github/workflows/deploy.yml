@@ -15,17 +15,17 @@ jobs:
         - name: Start SSH agent and add key
           uses: webfactory/ssh-agent@v0.9.0
           with: 
-            ssh-private-key: ${{secrets.DO_SSH_KEY}}
+            ssh-private-key: ${{ secrets.DO_SSH_KEY }}
 
         - name: Add server to known hosts
           run: |
             mkdir -p ~/.ssh
-            ssh-keyscan -H ${{secrets.DO_HOST}} >> ~/.ssh/known_hosts
+            ssh-keyscan -H ${{ secrets.DO_HOST }} >> ~/.ssh/known_hosts
         
         - name: Deploy files to server
           run: |
             rsync -az --delete \
             --exclude ".git" \ 
-            --exclide ".github" \
+            --exclude ".github" \
             ./ \
-            ${{secrets.DO_USER}}@${{secrets.DO_HOSTS}}:/var/www/khoale.site
+            ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/khoale.site
