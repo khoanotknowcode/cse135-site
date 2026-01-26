@@ -1,4 +1,4 @@
-name: Deploy to Apache
+name: Deploy to DigitalOcean
 
 on:
   push:
@@ -26,4 +26,4 @@ jobs:
             --exclude ".git*" \
             --exclude ".github" \
             ./khoale.site/ \
-            DO_USER@DO_HOST:/var/www/khoale.site/
+            ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/khoale.site/
