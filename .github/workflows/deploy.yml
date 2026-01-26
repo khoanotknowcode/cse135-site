@@ -25,7 +25,7 @@ jobs:
         - name: Deploy files to server
           run: |
             rsync -az --delete \
-            --exclude ".git" \ 
-            --exclude ".github" \
-            "$GITHUB_WORKSPACE/" \
-            ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/khoale.site
+              --exclude ".git" \ 
+              --exclude ".github" \
+              "$GITHUB_WORKSPACE/" \
+              ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/khoale.site/
