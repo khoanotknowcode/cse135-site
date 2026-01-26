@@ -1,0 +1,3 @@
+# Hello, Hooman!
+User-agent: *
+Disallow:
