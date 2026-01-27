@@ -15,7 +15,7 @@
 - hw1/report.html: COMING SOON!
 
 ## Details of Github
-<video src="./135-hw1-p2-github-deploy.mp4" controls muted width="80%"></video>
+[Auto Deploy Demo](./video.html)
 
 ## Site Login
 - COMING SOON!
