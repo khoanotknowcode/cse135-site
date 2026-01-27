@@ -15,7 +15,7 @@
 - hw1/report.html: COMING SOON!
 
 ## Details of Github
-[Auto Deploy Demo](./video.html)
+[Auto Deploy Demo](https://khoanotknowcode.github.io/cse135-site/hw1-assets/video.html)
 
 ## Site Login
 - COMING SOON!
